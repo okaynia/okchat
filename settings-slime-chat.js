@@ -383,7 +383,9 @@ const backgroundSettings = defineSetting(
   'group',
   {
     settings: [
-      defineSetting('Background Color', 'color', 'color-input', {
+      defineSetting('User Background Color', 'userColor', 'color-input', {
+        defaultValue: 'transparent',
+      }),defineSetting('Message Background Color', 'color', 'color-input', {
         defaultValue: 'transparent',
       }),
       defineSetting('Padding (px)', 'padding', 'number-input', {

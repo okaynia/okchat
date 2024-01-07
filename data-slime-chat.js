@@ -60,13 +60,14 @@ slime2.widget.setData({
     "volume": 50
   },
   "backgroundStyles": {
-    "color": "transparent",
+    "color": "#4a7c59bf",
     "padding": 0,
     "fullWidth": false,
     "borderColor": "transparent",
     "borderWidth": 0,
     "borderRadius": 0,
-    "borderStyle": "solid"
+    "borderStyle": "solid",
+    "userColor": "#4a7c59f2"
   },
   "textStyles": {
     "font": "Open Sans",

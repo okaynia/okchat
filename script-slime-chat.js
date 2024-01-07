@@ -83,6 +83,7 @@ addEventListener('slime2:widget-data-update', () => {
   // background style settings
   eventList.css({
     '--backgroundColor': backgroundStyles.color,
+    '--userBackgroundColor': backgroundStyles.userColor,
     '--padding': `${backgroundStyles.padding}px`,
     '--borderColor': backgroundStyles.borderColor,
     '--borderWidth': `${backgroundStyles.borderWidth}px`,
