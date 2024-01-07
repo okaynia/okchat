@@ -1,5 +1,5 @@
 /* Google Fonts Import */
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 
 /*********************
  * slime2 containers *
@@ -7,18 +7,18 @@
 
 /* Container for the renderable events from slime2 */
 #slime2-event-list {
-  --fontName: Nunito;
+  --fontName: 'Open Sans';
   --fontSize: 16px;
-  --fontWeight: 800;
+  --fontWeight: 500;
   --badgeSize: 24px;
-  font-family: var(--fontName), Nunito, Helvetica, Arial, sans-serif;
+  font-family: var(--fontName), Helvetica, Arial, sans-serif;
   font-weight: var(--fontWeight);
   font-size: var(--fontSize);
   display: flex;
   overflow: hidden;
-  gap: var(--gap);
+  gap: 10px;
   position: absolute;
-  line-height: var(--lineHeight);
+  line-height: 30px;
   color: white;
   padding: 20px;
   width: 100%;
@@ -32,7 +32,9 @@
 
 /* Message container */
 .message {
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
   padding: var(--padding);
   background-color: var(--backgroundColor);
   border-color: var(--borderColor);
@@ -62,8 +64,10 @@
  ***************/
 /* Container for all user details (name, badges, pronouns) */
 .user {
-  padding-right: 0.33em;
+  padding: 5px 10px;
   color: var(--usernameColor);
+  background-color:rgba(74, 124, 89, .95);
+  border-radius: 5px 5px 0px 0px;
 }
 
 .display-under .user {
@@ -139,11 +143,16 @@
 
 /* Content container */
 .content {
-  overflow-wrap: anywhere;
-}
+  overflow-wrap: anywhere;  
+  background-color:rgba(74, 124, 89, .75);
+  padding: 5px 10px;}
 
 .text {
   color: var(--textColor);
+}
+
+.emote-1 {
+  width: 500px;
 }
 
 .emote {
@@ -151,8 +160,6 @@
   max-height: 112px;
   display: inline-block;
   vertical-align: middle;
-  margin-top: -0.25em;
-  margin-bottom: -0.2em;
 }
 
 /***********************
